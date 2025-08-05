@@ -3,7 +3,9 @@ include("./includes/common.php");
 $title = $conf['title'];
 include SYSTEM_ROOT.'header.php';
 $numrows = $DB->getColumn("SELECT count(*) FROM pre_file WHERE hide=0");
-
+// 添加总空间大小统计
+$totalSize = $DB->getColumn("SELECT sum(size) FROM pre_file WHERE hide=0");
+$totalSizeFormatted = size_format($totalSize ?: 0);
 ?>
 
     <main id="main-container">
@@ -11,7 +13,7 @@ $numrows = $DB->getColumn("SELECT count(*) FROM pre_file WHERE hide=0");
             <div class="bg-primary-dark-op py-9 overflow-hidden">
                 <div class="content content-full text-center">
                     <h1 class="display-4 fw-semibold text-white mb-2"><?php echo $title; ?></h1>
-                    <p class="fs-4 fw-normal text-white-50 mb-5">共有 <?php echo $numrows; ?> 个公开文件</p>
+                    <p class="fs-4 fw-normal text-white-50 mb-5">共有 <?php echo $numrows; ?> 个公开文件 | 总占用空间：<?php echo $totalSizeFormatted; ?></p>
                     <div>
                         <a class="btn btn-primary px-3 py-2 m-1" href="/upload.php">
                             <i class="fa fa-fw fa-upload opacity-50 me-1"></i> 上传文件
