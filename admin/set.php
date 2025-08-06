@@ -35,7 +35,6 @@ if($mod=='site'){
 	  <label class="col-sm-2 control-label">禁止访问IP</label>
 	  <div class="col-sm-10"><textarea class="form-control" name="blackip" rows="2" placeholder="多个IP用|隔开"><?php echo $conf['blackip']?></textarea></div>
 	</div><br/>
-
 	<div class="form-group">
 	  <label class="col-sm-2 control-label">文件查看页公告</label>
 	  <div class="col-sm-10"><textarea class="form-control" name="gg_file" rows="3" placeholder="不填写则不显示"><?php echo htmlspecialchars($conf['gg_file'])?></textarea></div>
@@ -43,6 +42,10 @@ if($mod=='site'){
 	<div class="form-group">
 	  <label class="col-sm-2 control-label">统计代码</label>
 	  <div class="col-sm-10"><textarea class="form-control" name="tongji" rows="3" placeholder="不填写则不显示统计代码"><?php echo htmlspecialchars($conf['tongji'])?></textarea></div>
+	</div><br/>
+	<div class="form-group">
+	  <label class="col-sm-2 control-label">首页背景</label>
+	  <div class="col-sm-10"><textarea class="form-control" name="bg" rows="3" placeholder="在此填写首页背景图的url"><?php echo htmlspecialchars($conf['bg'])?></textarea></div>
 	</div><br/>
 	<div class="form-group">
 	  <div class="col-sm-offset-2 col-sm-10"><input type="submit" name="submit" value="修改" class="btn btn-primary form-control"/><br/>
