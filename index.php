@@ -9,7 +9,7 @@ $totalSizeFormatted = size_format($totalSize ?: 0);
 ?>
 
     <main id="main-container">
-        <div class="bg-image" style="background-image: url('//dailybing.com/api/v1');">
+        <div class="bg-image" style="background-image: url('<?php echo $conf["bg"] ?>');">
             <div class="bg-primary-dark-op py-9 overflow-hidden">
                 <div class="content content-full text-center">
                     <h1 class="display-4 fw-semibold text-white mb-2"><?php echo $title; ?></h1>
