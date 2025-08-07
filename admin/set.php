@@ -83,7 +83,7 @@ if($mod=='site'){
       <div class="col-sm-10">
         <div id="editor" style="width:100%;height:600px;"></div>
         <textarea name="content" id="content" style="display:none;"><?php echo htmlspecialchars($about_content); ?></textarea>
-        <font color="red">注意：修改会直接影响根目录下的about.php文件，请谨慎操作</font>
+        <font color="red">注意：修改会直接影响根目录下的about.php文件，请谨慎操作</font><br><font color="blue">使用<a href="//wangeditor.com">wangEditor</a>编辑</font>
       </div>
     </div><br/>
     <div class="form-group">
@@ -96,7 +96,7 @@ if($mod=='site'){
 </div>
 
 <!-- 引入wangEditor -->
-<script src="https://cdn.jsdelivr.net/npm/wangeditor@4.7.15/dist/wangEditor.min.js"></script>
+<script src="/wangEditor.min.js"></script>
 <script>
 // 初始化编辑器
 const E = window.wangEditor
