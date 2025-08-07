@@ -4,7 +4,6 @@
 从[Releases](https://github.com/FirgtZhong/LittlePan/releases)中下载最新的文件<br>
 解压到网站根目录，打开网站，会自动转至安装界面<br>
 按照操作提示即可<br>
-可自行更改`about.php`文件，写上网盘的说明
 ## [使用文档](https://littlepan.netlify.app/)
 ## 支持一下
 原来的API不够完善，后来自己改了几遍，才能正常使用<br>
