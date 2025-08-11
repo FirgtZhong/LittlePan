@@ -1,3 +1,5 @@
+#v2版本现已推出！-->[快去参观](https://github.com/FirgtZhong/LittlePan_v2)
+
 ## LittlePan介绍
 这是一个外链网盘管理系统，根据[C4rpeDime/Oneui_Pan](https://github.com/C4rpeDime/Oneui_Pan)进行二改
 ## 食用说明
